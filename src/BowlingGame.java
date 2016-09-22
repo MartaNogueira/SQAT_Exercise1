@@ -20,12 +20,19 @@ public class BowlingGame {
 	// Sets the bonus throws at the end of the game
 	public void setBonus(int firstThrow, int secondThrow) {
 		//to be implemented
-	
+		
 	}
 	
 	// Returns the game score
 	public int score(){
 		//to be implemented: should return game score 
-		return 0;
+		
+		int counter = 0;
+		for (int i = frames.size() -1; i>=0; --i);{
+		counter += frames.get(0).score();
+		}
+		
+		return counter;
+		
 	}
 }
